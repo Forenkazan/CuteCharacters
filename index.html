@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1152 height=648 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -55,11 +55,11 @@
       var loaderUrl = buildUrl + "/CuteCharacters.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/CuteCharacters.data.br",
-        frameworkUrl: buildUrl + "/CuteCharacters.framework.js.br",
-        codeUrl: buildUrl + "/CuteCharacters.wasm.br",
+        dataUrl: buildUrl + "/CuteCharacters.data",
+        frameworkUrl: buildUrl + "/CuteCharacters.framework.js",
+        codeUrl: buildUrl + "/CuteCharacters.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "CuteCharacters",
         productName: "CuteCharacters",
         productVersion: "1.0",
         showBanner: unityShowBanner,
@@ -89,8 +89,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1152px";
+        canvas.style.height = "648px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
